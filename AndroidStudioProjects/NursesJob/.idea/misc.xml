@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/drawable/alert_background.xml" value="0.11" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/drawable/outlined_text_view.xml" value="0.1535" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/drawable/rounded_edittext.xml" value="0.124" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/drawable/rounded_rectangle_button.xml" value="0.1" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/experience_details_alert.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/experience_list_item.xml" value="0.253125" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/fragment_page_one.xml" value="0.2" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/fragment_profile_page1.xml" value="0.21388888888888888" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/fragment_profile_page2.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/fragment_profile_page3.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/profile_one.xml" value="0.5651041666666666" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/profile_page2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/W/AndroidStudioProjects/NursesJob/app/src/main/res/layout/rounded_edit_text.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/W/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/W/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

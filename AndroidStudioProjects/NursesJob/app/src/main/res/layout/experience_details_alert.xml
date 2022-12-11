@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dimen_5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dimen_25" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/dimen_35" />
+
+
+    <EditText
+        android:id="@+id/work_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Work Area"
+        android:textAlignment="textStart"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:inputType="textCapSentences"
+        android:background="@drawable/rounded_edittext"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top" />
+
+    <EditText
+        android:id="@+id/organisation_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Organisation Type"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:inputType="textCapSentences"
+        android:background="@drawable/rounded_edittext"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/work_area"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"/>
+
+
+
+    <EditText
+        android:id="@+id/organisation_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Organisation Name"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:inputType="textCapSentences"
+        android:background="@drawable/rounded_edittext"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/organisation_type"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"/>
+
+
+    <EditText
+        android:id="@+id/position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Position"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:inputType="textCapSentences"
+        android:background="@drawable/rounded_edittext"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/organisation_name"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"/>
+
+
+    <TextView
+        android:id="@+id/joined_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableEnd="@drawable/ic__calendar_today_24"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        android:clickable="false"
+        android:hint="Joined Date"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/position"
+        android:focusable="true" />
+
+    <RadioGroup
+        android:id="@+id/working_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/joined_date">
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5"
+            android:textSize="@dimen/dimen_16sp"
+            android:text="Currently working"
+            android:textColor="@color/purple"
+            app:layout_constraintStart_toStartOf="@id/guideline_left"
+            app:layout_constraintTop_toTopOf="@id/gender_group" />
+
+        <RadioButton
+            android:id="@+id/yes_rbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5"
+            android:textSize="@dimen/dimen_16sp"
+            android:paddingStart="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_35"
+            android:text="Yes"
+            android:textColor="@color/purple"
+            app:layout_constraintStart_toEndOf="@id/gender_text"
+            app:layout_constraintTop_toTopOf="@id/gender_group">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/no_rbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5"
+            android:textSize="@dimen/dimen_16sp"
+            android:paddingStart="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_35"
+            android:text="No"
+            android:textColor="@color/purple"
+            app:layout_constraintStart_toEndOf="@id/male_rbutton"
+            app:layout_constraintTop_toTopOf="@id/gender_group">
+        </RadioButton>
+    </RadioGroup>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sumit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/rounded_rectangle_button"
+        android:padding="@dimen/dimen_15"
+        android:paddingStart="@dimen/dimen_30"
+        android:paddingEnd="@dimen/dimen_30"
+        android:text="Submit"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_end"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/working_group" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

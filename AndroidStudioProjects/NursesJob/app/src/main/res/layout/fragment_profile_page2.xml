@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfilePage2">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_35" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dimen_30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dimen_30" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/dimen_50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:id="@+id/profile_title"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toTopOf="@id/guideline_top"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_course"
+        android:id="@+id/course_title"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toBottomOf="@id/profile_title"
+        app:layout_constraintStart_toStartOf="@id/guideline_left" />
+
+
+    <Spinner
+        android:id="@+id/course_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:inputType="textCapSentences"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/select_course"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        android:textColor="@color/purple"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/course_title" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_year_title"
+        android:id="@+id/course_year_title"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toBottomOf="@id/course_text"
+        app:layout_constraintStart_toStartOf="@id/guideline_left" />
+
+
+    <Spinner
+        android:id="@+id/course_year"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/select_course"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        android:textColor="@color/purple"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/course_year_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nursing_council"
+        android:id="@+id/council_title"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toBottomOf="@id/course_year"
+        app:layout_constraintStart_toStartOf="@id/guideline_left" />
+
+
+    <Spinner
+        android:id="@+id/nursing_council"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:inputType="textCapSentences"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/select_course"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        android:textColor="@color/purple"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/council_title" />
+
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:inputType="phone"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/expected_salary"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/nursing_council" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/licenece_title"
+        android:id="@+id/licence_title"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toBottomOf="@id/salary"
+        app:layout_constraintStart_toStartOf="@id/guideline_left" />
+
+
+    <Spinner
+        android:id="@+id/international_licence"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:inputType="textCapSentences"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/select_licence"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/dimen_15"
+        android:singleLine="true"
+        android:textColor="@color/purple"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/licence_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/rounded_rectangle_button"
+        android:padding="@dimen/dimen_15"
+        android:text="@string/next"
+        android:layout_marginEnd="@dimen/dimen_25"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/previous_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginStart="@dimen/dimen_25"
+        android:background="@drawable/rounded_rectangle_button"
+        android:padding="@dimen/dimen_15"
+        android:text="@string/previous"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
